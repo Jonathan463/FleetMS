@@ -10,10 +10,30 @@ public class ApplicationController {
         return "index";
     }
 
-    @GetMapping("/widget")
-    public String widget(){
+    @GetMapping("/hr")
+    public String hr(){
 
-        return "widgets";
+        return "/hr/index";
+    }
+    @GetMapping("/account")
+    public String account(){
+
+        return "/account/index";
+    }
+    @GetMapping("/IT")
+    public String atIT(){
+
+        return "/IT/index";
+    }
+    @GetMapping("/payroll")
+    public String payRole(){
+
+        return "/payroll/index";
+    }
+    @GetMapping("/vehicle")
+    public String vehicles(){
+
+        return "/fleet/index";
     }
 }
 
